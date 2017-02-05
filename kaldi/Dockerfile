@@ -13,7 +13,7 @@ RUN apt-get install -y sudo git apt-utils
 RUN apt-get install -y python2.7 libtool python libtool-bin
 RUN ln -s -f bash /bin/sh
 
-RUN git clone https://github.com/jbender/kaldi.git /kaldi --depth=1
+RUN git clone https://github.com/kaldi-asr/kaldi.git /kaldi --depth=1
 
 RUN /kaldi/tools/extras/check_dependencies.sh | grep "sudo apt-get" | \
             while read -r cmd; do \
