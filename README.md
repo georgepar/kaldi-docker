@@ -22,3 +22,5 @@ You can set the following arguments when building Kaldi:
 
 - `NUM_BUILD_CORES`: The numbers of cores used for the compilation. Default: 8.
 - `OPENFST_VERSION`: The version of OpenFST library Kaldi will build against. Default: 1.4.1.
+
+This is partially based on https://github.com/jbender/docker-kaldi
